@@ -1,0 +1,8 @@
+{% extends 'aigo/base.html' %}
+
+{% block content %}
+    <p>Nootti data:</p>
+    {% for data in aigos %}
+    <li>{{ data.message }}</li>
+    {% endfor %}
+{% endblock  %}
